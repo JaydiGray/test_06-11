@@ -7,6 +7,24 @@
     <link rel="stylesheet" href="css/common.css" />
   </head>
   <body>
+    <header class="header">
+      <form class="search-form" id="search-form">
+        <input
+          type="text"
+          name="searchQuery"
+          autocomplete="off"
+          placeholder="Search images..."
+        />
+        <button type="submit">Search</button>
+      </form>
+    </header>
+    <main>
+      <div class="gallery"></div>
+      <button type="button" class="load-more" data-action="load-more">
+        <span class="spinner is-hidden"></span>
+        <span class="label">Load more</span>
+      </button>
+    </main>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
