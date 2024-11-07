@@ -14,7 +14,6 @@ export default class ApiService {
       .then(res => res.json())
       .then(data => {
         this.incrementPage();
-        console.log(data);
         return data;
       });
   }
